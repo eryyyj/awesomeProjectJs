@@ -18,7 +18,7 @@ export default function App() {
     <View style={styles.appContainer}>
       <GoalInput onAddGoal={addGoalHandler} />
       <View style={styles.goalsContainer}>
-        <text style={styles.listStyle}> List of Goals</text>
+        <Text style={styles.listStyle}> List of Goals</Text>
         <FlatList
           data={courseGoals}
           renderItem={(itemData) => (
