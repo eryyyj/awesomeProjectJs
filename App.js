@@ -36,15 +36,18 @@ const styles = StyleSheet.create({
     paddingTop: 50,
     paddingHorizontal: 16,
     flex: 1,
+    backgroundColor: "#f0d18fff",
   },
   goalsContainer: {
     flex: 3,
   },
   listStyle: {
     fontStyle: 'normal',
-    backgroundColor: '#16e06bff',
+    backgroundColor: '#e0a016ff',
     borderBottomWidth: 1,
     borderRadius: 6,
     padding:5,
+    fontSize: 30,
+    textAlign: 'center',
   },
 });

@@ -19,10 +19,12 @@ function GoalInput(props) {
         style={styles.textInput}
         placeholder='Your Course Goal'
         onChangeText={goalInputHandler}
+        value = {enteredGoalText}
       />
       <Button
         title='Add Goal'
         onPress={addGoalHandler}
+        color = '#f7a50dff'
       />
     </View>
   );
@@ -32,17 +34,16 @@ export default GoalInput;
 
 const styles = StyleSheet.create({
   inputContainer: {
-    flex: 1,
+    flex: 0.5,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingBottom: 20,
     borderBottomWidth: 1,
     borderBottomColor: '#cccccc',
   },
   textInput: {
     borderWidth: 2,
-    borderColor: '#cccccc',
+    borderColor: '#946809ff',
     width: '70%',
     padding: 13,
   },
