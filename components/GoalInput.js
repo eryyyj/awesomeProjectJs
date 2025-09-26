@@ -1,4 +1,4 @@
-import { View, TextInput, Button, StyleSheet, Pressable,Text} from 'react-native';
+import { View, TextInput, Button, StyleSheet, Pressable,Text,Alert} from 'react-native';
 import { useState } from 'react';
 
 function GoalInput(props) {
@@ -28,6 +28,15 @@ function GoalInput(props) {
         color = '#f7a50dff'
         />
         <Pressable
+          onLongPress={() => {
+            Alert.alert(
+              "Long Press Alert",
+              "Pinindot mo nang matagal yung button",
+              [
+                { text: "OK" }
+              ]
+            );
+          }}
           style={({pressed}) => [
             {
               backgroundColor: pressed ? '#f7a50da4' : '#f7a50dff',
