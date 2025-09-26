@@ -8,7 +8,11 @@ function GoalList(props) {
       <FlatList
         data={props.courseGoals}
         renderItem={(itemData) => (
-          <GoalItem text={itemData.item.text} />
+          <GoalItem 
+            text={itemData.item.text} 
+            id={itemData.item.key}
+            onDeleteItem={props.onDeleteGoal}
+          />
         )}
         keyExtractor={(item) => item.key}
       />

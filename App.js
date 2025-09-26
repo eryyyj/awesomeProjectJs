@@ -14,10 +14,16 @@ export default function App() {
     ]);
   }
 
+  function deleteGoalHandler(goalKey) {
+    setCourseGoals(currentCourseGoals => 
+      currentCourseGoals.filter(goal => goal.key !== goalKey)
+    );
+  }
+
   return (
     <View style={styles.appContainer}>
       <GoalInput onAddGoal={addGoalHandler} />
-      <GoalList courseGoals={courseGoals} />
+      <GoalList courseGoals={courseGoals} onDeleteGoal={deleteGoalHandler} />
     </View>
   );
 }
