@@ -1,24 +1,12 @@
 import { View, Text, StyleSheet, Pressable } from 'react-native';
-<<<<<<< HEAD
-=======
 import { MaterialIcons } from '@expo/vector-icons';
->>>>>>> 2ce8f57 (added modals to my goals app)
 
 function GoalItem(props) {
   return (
     <View style={styles.goalItem}>
-<<<<<<< HEAD
-      <Pressable
-        android_ripple={{ color: '#dddddd' }}
-        onPress={props.onDeleteItem.bind(this, props.id)}
-        style={({ pressed }) => pressed && styles.pressedItem}
-      >
-        <Text style={styles.goalText}>{props.text}</Text>
-=======
       <Text style={styles.goalText}>{props.text}</Text>
       <Pressable onPress={props.onDelete} style={styles.deleteButton}>
         <MaterialIcons name="delete" size={20} color="#fff" />
->>>>>>> 2ce8f57 (added modals to my goals app)
       </Pressable>
     </View>
   );

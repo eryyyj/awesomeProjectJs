@@ -8,15 +8,7 @@ function GoalList(props) {
       <FlatList
         data={props.courseGoals}
         renderItem={(itemData) => (
-<<<<<<< HEAD
-          <GoalItem 
-            text={itemData.item.text} 
-            id={itemData.item.key}
-            onDeleteItem={props.onDeleteGoal}
-          />
-=======
           <GoalItem text={itemData.item.text} onDelete={() => props.onDeleteGoal(itemData.item.key)} />
->>>>>>> 2ce8f57 (added modals to my goals app)
         )}
         keyExtractor={(item) => item.key}
       />
@@ -39,9 +31,6 @@ const styles = StyleSheet.create({
     fontSize: 30,
     textAlign: 'center',
   },
-<<<<<<< HEAD
-});
-=======
   modalContainer: {
     flex: 1,
     justifyContent: 'center',
@@ -74,4 +63,3 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
->>>>>>> 2ce8f57 (added modals to my goals app)

@@ -59,9 +59,6 @@ export default function App() {
         <Text style={styles.navTitle}>Goal List</Text>
       </View>
       <GoalInput onAddGoal={addGoalHandler} />
-<<<<<<< HEAD
-      <GoalList courseGoals={courseGoals} onDeleteGoal={deleteGoalHandler} />
-=======
   <GoalList courseGoals={courseGoals} onDeleteGoal={requestDeleteGoal} />
       {/* Welcome Modal */}
       <Modal
@@ -118,7 +115,6 @@ export default function App() {
           </View>
         </View>
       </Modal>
->>>>>>> 2ce8f57 (added modals to my goals app)
     </View>
   );
 }
@@ -161,9 +157,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#f0d18fff",
   },
-<<<<<<< HEAD
-});
-=======
   navBar: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -182,4 +175,3 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
->>>>>>> 2ce8f57 (added modals to my goals app)
